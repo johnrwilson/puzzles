@@ -1,7 +1,7 @@
 from fractions import gcd
 
 def coprime(a, b):
-    return gcd(a, b) == 1
+    return gcd(a, b) == 1 
 
 def modInverse(a, m) : 
     a = a % m; 
