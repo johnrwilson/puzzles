@@ -13,10 +13,10 @@ def find_fewest_coins(coins, target):
         neededCoins=[changeLeft//i for i in coins]
         
         #Only if number of coins is positive
-        tmp = [i for i in neededCoins if i>0]
+        RequiredCoins = [i for i in neededCoins if i>0]
         
-        #Which is the biggest coin
-        noBiggestCoin = min(tmp)
+        #How many of the biggest coin we require
+        noBiggestCoin = min(RequiredCoins)
         
         #Retrieve coordinate
         biggestCoinIndex = neededCoins.index(noBiggestCoin)
